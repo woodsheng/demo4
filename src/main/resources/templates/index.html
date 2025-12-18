@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>显示查询结果</title>
+<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{css/bootstrap-theme.min.css}" />
+</head>
+<body>
+     <h1>第6章第1个示例</h1>
+	<a href="/save">save</a><br>
+     <a href="/findAll">findAll</a><br>
+     <a href="/findByUname?uname=陈恒2">findByUname</a><br>
+     <a href="/findByUnameLike?uname=陈">findByUnameLike</a><br>
+     <a href="/getOne?id=1">getOne</a>
+     <h1>第6章第2个示例</h1>
+
+
+     <h2>OneToOne</h2>
+
+     <a href="/save_person62">save1</a><br>
+     <a href="/findByIdCard_id?id=1">findByIdCard_id2</a><br>
+     <a href="/findByPerson_id?id=1">findByPerson_id3</a><br>
+     <a href="/findAllPerson">findAllPerson4</a><br>
+     <a href="/findAllIdCard">findAllIdCard5</a><br>
+
+     <a href="/findByAddressAndCode?address=北京&code=123456789">findByAddressAndCode6</a><br>
+
+     <a href="/findByPnameAndPsex?pname=陈恒1&psex=男">findByPnameAndPsex7</a><br>
+     <a href="/getOneIdCard?id=1">getOneIdCard8</a><br>
+     <a href="/getOnePerson?id=1">getOnePerson9</a><br>
+
+     <h2>OneToMany</h2>
+     <a href="/saveOneToMany">saveOneToMany1</a><br>
+     <a href="/findArticleByAuthor_id?id=2">findArticleByAuthor_id2</a><br>
+     <a href="/findArticleByAuthor_aname?aname=陈恒1">findArticleByAuthor_aname3</a><br>
+
+     <a href="/findByArticleList_titleContaining?title=JPA的一对多111">findByArticleList_titleContaining4</a><br>
+
+     <a href="/findAuthorByArticleList_titleContaining?title=JPA的一对多111">findAuthorByArticleList_titleContaining5</a><br>
+
+
+
+     <h2>ManyToMany</h2>
+    
+     
+     <a href="/saveManyToMany">1saveManyToMany</a><br>
+     <a href="/findByAuthorityList_id?id=1">2findByAuthorityList_id</a><br>
+     <a href="/findByAuthorityList_name?name=修改">3findByAuthorityList_name</a><br>
+     <a href="/findByUserList_id?id=2">4findByUserList_id</a><br>
+     <a href="/findByUserList_Username?username=陈恒2">5findByUserList_Username</a><br>
+     <a href="/findByUserListUsername?username=admin">6findByUserListUsername</a><br>
+
+    
+
+     
+</body>
+</html>
