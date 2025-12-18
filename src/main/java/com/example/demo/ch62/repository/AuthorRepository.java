@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface AuthorRepository extends JpaRepository<Author, Integer>{
     Author findAuthorById(int id);
+    Author findAuthorByName(String name);
     /**
 	 * 根据文章标题包含的内容，查询作者（关联查询）
 	 * 相当于JPQL语句：select a from Author a  inner join  a.articleList t where t.title like %?1%
